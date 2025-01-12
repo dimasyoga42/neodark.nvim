@@ -20,9 +20,7 @@ local colors = {
 local function set_highlight(group, opts)
 	vim.api.nvim_set_hl(0, group, opts)
 end
-function M.apply(opts)
-	colors = vim.tbl_deep_extend("force", colors, colors or {})
-end
+
 set_highlight("normal", { fg = colors.fg, bg = colors.bg })
 set_highlight("commant", { fg = colors.commant, italic = true })
 set_highlight("keyword", { fg = colors.keyword, bold = true })

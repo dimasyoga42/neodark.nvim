@@ -1,6 +1,5 @@
 local M = {}
-M.load = function(opts)
-	opts = opts or {}
+M.load = function()
 	vim.cmd("colorscheme neodark")
 end
 
